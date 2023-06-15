@@ -2,229 +2,557 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahrul Rozak - portfolio</title>
 
-    <style>
-        body {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
-            background: -webkit-linear-gradient(90deg, #16222A 10%, #3A6073 90%);
-            /* Chrome 10+, Saf5.1+ */
-            background: -moz-linear-gradient(90deg, #16222A 10%, #3A6073 90%);
-            /* FF3.6+ */
-            background: -ms-linear-gradient(90deg, #16222A 10%, #3A6073 90%);
-            /* IE10 */
-            background: -o-linear-gradient(90deg, #16222A 10%, #3A6073 90%);
-            /* Opera 11.10+ */
-            background: linear-gradient(90deg, #16222A 10%, #3A6073 90%);
-            /* W3C */
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-        }
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 
-        .parent2 {
-            top: 15px;
-            left: 15px;
-            position: fixed;
-            display: block;
-            width: 100px;
-            height: 100px;
-            background-color: transparent;
-            border-radius: 50%;
-            z-index: 20;
-            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-        }
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-        .test1 {
-            width: 60%;
-            height: 60%;
-            background-color: dimGray;
-            border-radius: 50%;
-            position: absolute;
-            color: white;
-            text-align: center;
-            line-height: 70px;
-            top: 25%;
-            left: 25%;
-            z-index: 19;
-            transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
-            position: absolute;
-        }
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-        .test2 {
-            width: 60%;
-            height: 60%;
-            background-color: dimGray;
-            border-radius: 50%;
-            position: absolute;
-            color: white;
-            text-align: center;
-            line-height: 70px;
-            top: 25%;
-            left: 25%;
-            z-index: 19;
-            transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .2s;
-        }
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-main.css">
 
-        .test3 {
-            width: 60%;
-            height: 60%;
-            background-color: dimGray;
-            border-radius: 50%;
-            position: absolute;
-            color: white;
-            text-align: center;
-            line-height: 70px;
-            top: 25%;
-            left: 25%;
-            transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .4s;
-        }
 
-        .test4 {
-            width: 60%;
-            height: 60%;
-            background-color: dimGray;
-            border-radius: 50%;
-            position: absolute;
-            color: white;
-            text-align: center;
-            line-height: 70px;
-            top: 25%;
-            left: 25%;
-            transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .6s;
-        }
-
-        .mask2 {
-            top: 15px;
-            left: 15px;
-            width: 100px;
-            height: 100px;
-            background: darkSlateGray;
-            border-radius: 50%;
-            position: absolute;
-            z-index: 21;
-            color: white;
-            text-align: center;
-            line-height: 120px;
-            cursor: pointer;
-            position: fixed;
-        }
-
-        .jumbotron {
-            text-align: center;
-            color: ;
-            font-family: Helvetica;
-            border-style: solid;
-            border-width: 1px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-
-        .div2 {
-            text-align: center;
-            color: white;
-            font-family: Helvetica;
-            height: 125px;
-            padding: 10px 5%;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            shadow-color: black;
-            background: -webkit-linear-gradient(90deg, #16222A 10%, #3A6073 90%);
-            /* Chrome 10+, Saf5.1+ */
-            background: -moz-linear-gradient(90deg, #16222A 10%, #3A6073 90%);
-            /* FF3.6+ */
-            background: -ms-linear-gradient(90deg, #16222A 10%, #3A6073 90%);
-            /* IE10 */
-            background: -o-linear-gradient(90deg, #16222A 10%, #3A6073 90%);
-            /* Opera 11.10+ */
-            background: linear-gradient(90deg, #16222A 10%, #3A6073 90%);
-            /* W3C */
-        }
-
-        .div3 {
-            text-align: center;
-            box-shadow: 0 5px 5px 5px;
-            padding: 100px;
-
-        }
-
-        .div3 img {
-            border-style: inset;
-            border: 1px solid white;
-            box-shadow: 4px 2px 1px 2px;
-        }
-
-        .bt0n {
-            color: white;
-        }
-
-        .bt0n:hover {
-            color: black;
-        }
-
-        .pt3 {
-            padding: 0;
-        }
-    </style>
 </head>
 
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easytabs/3.2.0/jquery.easytabs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.caroufredsel/6.2.1/jquery.carouFredSel.packed.js"></script>
+<script src="js/script.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+</script>
+
 <body>
-    <div class="parent2">
-        <div class="test1"><a target='_blank' href="https://codepen.io/RonG/full/pbjjWa/"><i
-                    class="fa fa-user fa-2x bt0n"></i></a></div>
-        <div class="test2"><i class="fa fa-briefcase fa-2x bt0n"></i></div>
-        <div class="test3"><i class="fa fa-code fa-2x bt0n"></i></div>
-        <div class="test4"><i class="fa fa-envelope fa-2x bt0n"></i></div>
-        <div class="mask2"><i class="fa fa-home fa-3x bt0n"></i></div>
-    </div>
 
-    <div class="div1 jumbotron">
-        <h1>Welcome to my Website!</h1>
-    </div>
+    <section id="container">
+
+        <header>
+
+            <div id="logo">
+                <h2>BAHRUL ROZAK</h2>
+                <h4>JUNIOR WEB DEVELOPER</h4>
+            </div>
+
+            <div class="social-icons-container">
+                <span class="socials-text">
+                    <button class="pulse-button">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                    </button>
+                </span>
+                <ul class="socialicons">
+                    <li><a href="https://instagram.com/rozak.dexamethasone"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://linkedin.com/in/bahrul-rozak"><i class="fa fa-linkedin"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/Bahrul-Rozak"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://stackoverflow.com/users/20835639/bahrul-rozak"><i class="fa fa-stack-overflow"
+                                aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+        </header>
+
+        <section id="content">
+
+            <div id="profile">
+
+                <div class="about">
+
+                    <div class="photo-inner">
+
+                        <ul>
+                            <li><img src="images/photo.jpg" width="153px" height="183px" alt=""></li>
+                        </ul>
+
+                    </div>
+
+                    <h1>BAHRUL ROZAK</h1>
+                    <h3>JUNIOR WEB DEVELOPER</h3>
+                    <br>
+                    <p>
+                        I am a selftaugh web developer
+                    </p>
+
+                </div>
+
+                <ul class="personal-info">
+                    <li><label>Name</label><span>Bahrul Rozak</span></li>
+                    <li><label>Birthday</label><span>June 13, 2001</span></li>
+                    <li><label>Address</label><span>Tangerang - Indonesia</span></li>
+                    <li><label>Email</label><span class="word-wrap">bahrulrozak02@gmail.com</span></li>
+                    <li><label>Phone</label><span>0812-4444-8888</span></li>
+                    <li><label>Website</label><span class="word-wrap">www.website.com</span></li>
+                </ul>
+
+            </div>
+
+            <nav class="menu">
+                <ul class="tabs">
+
+                    <li class="tmenu">
+                        <a href="#profile" class="tab-profile active">
+                            <i class="fa fa-user"></i> PROFILE
+                        </a>
+                    </li>
+
+                    <li class="tmenu">
+                        <a href="#resume">
+                            <i class="fa fa-wpexplorer"></i> RESUME
+                        </a>
+                    </li>
+
+                    <li class="tmenu">
+                        <a href="#portfolio">
+                            <i class="fa fa-eercast"></i> PORTFOLIO
+                        </a>
+                    </li>
+
+                    <li class="tmenu">
+                        <a href="#contact">
+                            <i class="fa fa-telegram"></i> CONTACT
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <section id="resume">
+
+                <div class="timeline-section">
+                    <div class="main-wrapper-resume">
+                        <div class="carttitle-wrapper">
+                            <div class="color-box">
+                                <button id="red-color" class="btn-style"></button>
+                                <button id="yellow-color" class="btn-style"></button>
+                                <button id="blue-color" class="btn-style"></button>
+                                <button id="green-color" class="btn-style"></button>
+                                <button class="setting-icon">
+                                    <i class="fa fa-cog fa-spin" aria-hidden="true"></i>
+                                </button>
+                            </div>
+
+                            <div class="container no-padding">
+                                <div class="row no-margin">
+                                    <div class="col-md-6 no-padding bg-color-left">
+
+                                        <div class="left-name bg-color-1">
+                                            <h2>BAHRUL <span class="text-color">ROZAK</span></h2>
+                                            <h5>JUNIOR WEB DEVELOPER</h5>
+                                            <p>
+                                                I am a selftaugh web developer
+                                            </p>
+                                        </div>
+
+                                        <div class="left-address">
+                                            <ul>
+
+                                                <li>
+                                                    <span class="text-color">
+                                                        Phone
+                                                    </span> 0812-4444-8888
+                                                </li>
+
+                                                <li>
+                                                    <span class="text-color">
+                                                        Address
+                                                    </span> Tangerang - Indonesia
+                                                </li>
+
+                                                <li>
+                                                    <span class="text-color">
+                                                        Email
+                                                    </span> bahrulrozak02@gmail.com
+                                                </li>
+
+                                            </ul>
+                                        </div>
+
+                                        <div class="ex-heading">
+                                            <h2>EXPERIENCE</h2>
+                                        </div>
+
+                                        <div class="ex-box">
+                                            <h2>2017</h2>
+                                            <h4>Internship Pharmacy</h4>
+                                            <p>
+                                                RSUD Kota Tangerang
+                                            </p>
+                                        </div>
 
 
-    <div class="row">
-        <div class="col-sm-4 div2">
-            <h3>This is poor example of what I can do</h3>
-            <h4>Click to home button in the corner to view other pages</h4>
-        </div>
-        <div class="col-sm-4 div2">
-            <h3>In exchange for visiting this site, I've provided a gif of Bill Murray</h3>
-        </div>
-        <div class="col-sm-4 div2 pt3">
-            <h2>Why? It was the first gif in a search.</h2>
-            <h3>P.S. This is just a practice site I used to try new things</h3>
-        </div>
-    </div>
+                                        <div class="ex-box">
+                                            <h2>2018</h2>
+                                            <h4>Internship</h4>
+                                            <p>
+                                                RS Daan Mogot (KESDAM)
+                                            </p>
+                                        </div>
 
-    <div class="div3"><img alt="Norway" width="400" height="500"
-            src="https://media.giphy.com/media/vCKC987OpQAco/giphy.gif">
-    </div>
+                                        <div class="ex-box">
+                                            <h2>2017 - 2020</h2>
+                                            <h4>Karang Taruna</h4>
+                                            <p>
+                                                Sekretaris Karang Taruna
+                                            </p>
+                                        </div>
 
-    <script>
-        $(document).ready(function () {
+                                        <div class="ex-box">
+                                            <h2>2020</h2>
+                                            <h4>PK IMM FT UHAMKA</h4>
+                                            <p>
+                                                Anggota Bidang Media & Komunikasi
+                                            </p>
+                                        </div>
 
-            var active1 = false;
-            var active2 = false;
-            var active3 = false;
-            var active4 = false;
+                                        <div class="ex-box">
+                                            <h2>2021</h2>
+                                            <h4>Project Management</h4>
+                                            <p>
+                                                Team UI UX
+                                            </p>
+                                        </div>
 
-            $('.parent2').on('mousedown touchstart', function () {
+                                        <div class="ex-box">
+                                            <h2>2021</h2>
+                                            <h4>Teknoka 6 UHAMKA</h4>
+                                            <p>
+                                                Web Developer
+                                            </p>
+                                        </div>
 
-                if (!active1) $(this).find('.test1').css({ 'background-color': 'gray', 'transform': 'translate(0px,125px)' });
-                else $(this).find('.test1').css({ 'background-color': 'dimGray', 'transform': 'none' });
-                if (!active2) $(this).find('.test2').css({ 'background-color': 'gray', 'transform': 'translate(60px,105px)' });
-                else $(this).find('.test2').css({ 'background-color': 'darkGray', 'transform': 'none' });
-                if (!active3) $(this).find('.test3').css({ 'background-color': 'gray', 'transform': 'translate(105px,60px)' });
-                else $(this).find('.test3').css({ 'background-color': 'silver', 'transform': 'none' });
-                if (!active4) $(this).find('.test4').css({ 'background-color': 'gray', 'transform': 'translate(125px,0px)' });
-                else $(this).find('.test4').css({ 'background-color': 'silver', 'transform': 'none' });
-                active1 = !active1;
-                active2 = !active2;
-                active3 = !active3;
-                active4 = !active4;
+                                        <div class="ex-box">
+                                            <h2>2021</h2>
+                                            <h4>BPTI UHAMKA</h4>
+                                            <p>
+                                                Web Developer
+                                            </p>
+                                        </div>
 
-            });
-        });
-    </script>
+                                    </div>
+
+                                    <div class="col-md-6 no-padding bg-color-right">
+
+                                        <div class="top-skills">
+
+                                            <div class="skill-name">
+                                                <div class="sn">
+                                                    HTML
+                                                </div>
+                                                <ul>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="skill-name">
+                                                <div class="sn">CSS</div>
+                                                <ul>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="skill-name">
+                                                <div class="sn">JS</div>
+                                                <ul>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="right-skills">
+                                            <div class="row no-margin">
+                                                <div class="col-md-12 heading-skills no-padding">
+                                                    <h3>MY SKILLS</h3>
+                                                </div>
+                                            </div>
+
+                                            <div class="row no-margin">
+                                                <div class="col-md-5 no-padding">
+                                                    <h4>HTML</h4>
+                                                </div>
+                                                <div class="col-md-7 no-padding">
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-warning progress-bar-striped"
+                                                            role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 100%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row no-margin">
+                                                <div class="col-md-5 no-padding">
+                                                    <h4>CSS</h4>
+                                                </div>
+                                                <div class="col-md-7 no-padding">
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-warning progress-bar-striped"
+                                                            role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 100%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row no-margin">
+                                                <div class="col-md-5 no-padding">
+                                                    <h4>JavaScript</h4>
+                                                </div>
+                                                <div class="col-md-7 no-padding">
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-warning progress-bar-striped"
+                                                            role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 100%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row no-margin mt-25">
+
+                                                <div class="col-md-12 heading-skills no-padding">
+                                                    <h3>INTERESTS</h3>
+                                                </div>
+
+                                                <div class="col-md-4 intetst-box">
+                                                    <div class="intetst-icons">
+                                                        <i class="fa fa-plane"></i>
+                                                        <br>
+                                                        <h5>TRAVEL</h5>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 intetst-box">
+                                                    <div class="intetst-icons">
+                                                        <i class="fa fa-headphones"></i>
+                                                        <br>
+                                                        <h5>MUSIC</h5>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 intetst-box">
+                                                    <div class="intetst-icons">
+                                                        <i class="fa fa-book"></i>
+                                                        <br>
+                                                        <h5>READ</h5>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="education-right">
+
+                                            <div class="row no-margin">
+                                                <div class="col-md-12 heading-skills no-padding">
+                                                    <h3>EDUCATION</h3>
+                                                    <div class="ex-box">
+                                                        <h2>2017-2019</h2>
+                                                        <h5>SMK Kesehatan BIPTA</h5>
+                                                        <p>
+                                                            Pharmacy
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12 heading-skills no-padding">
+                                                    <div class="ex-box">
+                                                        <h2>2019-NOW</h2>
+                                                        <h5>UHAMKA UNIVERSITY</h5>
+                                                        <p>
+                                                            Computer Science
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="address-qr-right">
+                                            <div class="row no-margin">
+                                                <div class="col-md-5 no-padding">
+                                                    <div class="qr-box">
+                                                        <img src="images/qr.png" alt="">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-7 no-padding">
+                                                    <div class="address-right-box">
+                                                        <ul>
+
+                                                            <li>
+                                                                <i class="fa fa-phone-square" aria-hidden="true"></i>
+                                                                <p>0812-4444-8888</p>
+                                                            </li>
+
+                                                            <li>
+                                                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                                                <p>www.website.com</p>
+                                                            </li>
+
+                                                            <li>
+                                                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                                <p>Tangerang - Indonesia</p>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="portfolio">
+
+                <ul class="cats-filter" id="portfolio-filter">
+                    <li><a href="" class="current transition" data-filter="*">All</a></li>
+                    <li><a href="" class="transition" data-filter=".website">Website</a></li>
+                    <li><a href="" class="transition" data-filter=".design">Design</a></li>
+                </ul>
+
+                <div class="extra-text">Some of my projects in different packages.</div>
+
+                <ul id="portfolio-list">
+
+                    <li class="website">
+                        <a href="https://github.com/Bahrul-Rozak/E-Sekolah" class="folio" target="_blank">
+                            <img src="images/works/Website/perum-taman-kota-rajeg.png" alt="perum-taman-kota-rajeg">
+                            <h2 class="title">Perum Taman Kota Rajeg - VueJS + Laravel</h2>
+                            <span class="categorie">Website</span>
+                        </a>
+                    </li>
+                    <li class="website">
+                        <a href="https://github.com/Bahrul-Rozak/Perumahan-Taman-Kota-Rajeg" class="folio"
+                            target="_blank">
+                            <img src="images/works/Website/e-sekolah.png" alt="e-sekolah">
+                            <h2 class="title">E-Sekolah - Bootstrap - Laravel</h2>
+                            <span class="categorie">Website</span>
+                        </a>
+                    </li>
+
+
+
+
+
+
+
+
+
+                    <li class="design">
+                        <a href="#" class="folio">
+                            <img src="images/works/Design/design-1.png" alt="">
+                            <h2 class="title">Healthips App</h2>
+                            <span class="categorie">Design</span>
+                        </a>
+                    </li>
+
+                    <li class="design">
+                        <a href="#" class="folio">
+                            <img src="images/works/Design/design-2.png" alt="">
+                            <h2 class="title">Kuy Rent</h2>
+                            <span class="categorie">Design</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </section>
+
+            <section id="contact">
+
+                <div id="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253863.70988361203!2d106.39249841140852!3d-6.1815248561875915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ffb6b0ad7ae3%3A0x301576d14feb9b0!2sTangerang%2C%20Banten!5e0!3m2!1sid!2sid!4v1627111510831!5m2!1sid!2sid"
+                        width="300" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+
+                <div class="contact-info">
+                    <h3 class="main-heading"><span>Contact info</span></h3>
+                    <ul>
+                        <li>0812-4444-8888</li>
+                        <li>bahrulrozak02@gmail.com</li>
+                        <li>Tangerang - Indonesia</li>
+                        <li>www.website.com</li>
+                    </ul>
+                </div>
+
+                <div class="contact-form">
+                    <h3 class="main-heading"><span>Let's keep in touch</span></h3>
+                    <br><br>
+                    <div id="contact-status">
+                        <form action="" id="contactform">
+
+                            <div class="form-group">
+
+                                <input type="text" id="name" class="form-control">
+                                <label for="name" class="form-control-placeholder">Your Name</label>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <input type="text" id="email" class="form-control">
+                                <label for="email" class="form-control-placeholder">Your Email</label>
+
+                            </div>
+
+                            <label for="message">Your message</label>
+                            <textarea name="message" id="" cols="88" rows="7" class="textarea"></textarea>
+
+                            <input type="submit" name="submit" value="send your message" class="button transition">
+
+                            <br><br>
+
+                        </form>
+                    </div>
+                </div>
+
+            </section>
+
+        </section>
+
+        <footer>
+            <div class="copyright" style="text-align: center;margin-top: 10px;">All Rights Reserved &copy; 2023 - by
+                bahrul rozak</div>
+        </footer>
+
+    </section>
 
 </body>
 
