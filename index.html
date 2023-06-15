@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+
+            background: -webkit-linear-gradient(90deg, #16222A 10%, #3A6073 90%);
+            /* Chrome 10+, Saf5.1+ */
+            background: -moz-linear-gradient(90deg, #16222A 10%, #3A6073 90%);
+            /* FF3.6+ */
+            background: -ms-linear-gradient(90deg, #16222A 10%, #3A6073 90%);
+            /* IE10 */
+            background: -o-linear-gradient(90deg, #16222A 10%, #3A6073 90%);
+            /* Opera 11.10+ */
+            background: linear-gradient(90deg, #16222A 10%, #3A6073 90%);
+            /* W3C */
+
+        }
+
+        .parent2 {
+            top: 15px;
+            left: 15px;
+            position: fixed;
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: transparent;
+            border-radius: 50%;
+            z-index: 20;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        .test1 {
+            width: 60%;
+            height: 60%;
+            background-color: dimGray;
+            border-radius: 50%;
+            position: absolute;
+            color: white;
+            text-align: center;
+            line-height: 70px;
+            top: 25%;
+            left: 25%;
+            z-index: 19;
+            transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+            position: absolute;
+        }
+
+        .test2 {
+            width: 60%;
+            height: 60%;
+            background-color: dimGray;
+            border-radius: 50%;
+            position: absolute;
+            color: white;
+            text-align: center;
+            line-height: 70px;
+            top: 25%;
+            left: 25%;
+            z-index: 19;
+            transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .2s;
+        }
+
+        .test3 {
+            width: 60%;
+            height: 60%;
+            background-color: dimGray;
+            border-radius: 50%;
+            position: absolute;
+            color: white;
+            text-align: center;
+            line-height: 70px;
+            top: 25%;
+            left: 25%;
+            transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .4s;
+        }
+
+        .test4 {
+            width: 60%;
+            height: 60%;
+            background-color: dimGray;
+            border-radius: 50%;
+            position: absolute;
+            color: white;
+            text-align: center;
+            line-height: 70px;
+            top: 25%;
+            left: 25%;
+            transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .6s;
+        }
+
+        .mask2 {
+            top: 15px;
+            left: 15px;
+            width: 100px;
+            height: 100px;
+            background: darkSlateGray;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 21;
+            color: white;
+            text-align: center;
+            line-height: 120px;
+            cursor: pointer;
+            position: fixed;
+        }
+
+        .jumbotron {
+            text-align: center;
+            color: ;
+            font-family: Helvetica;
+            border-style: solid;
+            border-width: 1px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .div2 {
+            text-align: center;
+            color: white;
+            font-family: Helvetica;
+            height: 125px;
+            padding: 10px 5%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            shadow-color: black;
+            background: -webkit-linear-gradient(90deg, #16222A 10%, #3A6073 90%);
+            /* Chrome 10+, Saf5.1+ */
+            background: -moz-linear-gradient(90deg, #16222A 10%, #3A6073 90%);
+            /* FF3.6+ */
+            background: -ms-linear-gradient(90deg, #16222A 10%, #3A6073 90%);
+            /* IE10 */
+            background: -o-linear-gradient(90deg, #16222A 10%, #3A6073 90%);
+            /* Opera 11.10+ */
+            background: linear-gradient(90deg, #16222A 10%, #3A6073 90%);
+            /* W3C */
+        }
+
+        .div3 {
+            text-align: center;
+            box-shadow: 0 5px 5px 5px;
+            padding: 100px;
+
+        }
+
+        .div3 img {
+            border-style: inset;
+            border: 1px solid white;
+            box-shadow: 4px 2px 1px 2px;
+        }
+
+        .bt0n {
+            color: white;
+        }
+
+        .bt0n:hover {
+            color: black;
+        }
+
+        .pt3 {
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent2">
+        <div class="test1"><a target='_blank' href="https://codepen.io/RonG/full/pbjjWa/"><i
+                    class="fa fa-user fa-2x bt0n"></i></a></div>
+        <div class="test2"><i class="fa fa-briefcase fa-2x bt0n"></i></div>
+        <div class="test3"><i class="fa fa-code fa-2x bt0n"></i></div>
+        <div class="test4"><i class="fa fa-envelope fa-2x bt0n"></i></div>
+        <div class="mask2"><i class="fa fa-home fa-3x bt0n"></i></div>
+    </div>
+
+    <div class="div1 jumbotron">
+        <h1>Welcome to my Website!</h1>
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-4 div2">
+            <h3>This is poor example of what I can do</h3>
+            <h4>Click to home button in the corner to view other pages</h4>
+        </div>
+        <div class="col-sm-4 div2">
+            <h3>In exchange for visiting this site, I've provided a gif of Bill Murray</h3>
+        </div>
+        <div class="col-sm-4 div2 pt3">
+            <h2>Why? It was the first gif in a search.</h2>
+            <h3>P.S. This is just a practice site I used to try new things</h3>
+        </div>
+    </div>
+
+    <div class="div3"><img alt="Norway" width="400" height="500"
+            src="https://media.giphy.com/media/vCKC987OpQAco/giphy.gif">
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+            var active1 = false;
+            var active2 = false;
+            var active3 = false;
+            var active4 = false;
+
+            $('.parent2').on('mousedown touchstart', function () {
+
+                if (!active1) $(this).find('.test1').css({ 'background-color': 'gray', 'transform': 'translate(0px,125px)' });
+                else $(this).find('.test1').css({ 'background-color': 'dimGray', 'transform': 'none' });
+                if (!active2) $(this).find('.test2').css({ 'background-color': 'gray', 'transform': 'translate(60px,105px)' });
+                else $(this).find('.test2').css({ 'background-color': 'darkGray', 'transform': 'none' });
+                if (!active3) $(this).find('.test3').css({ 'background-color': 'gray', 'transform': 'translate(105px,60px)' });
+                else $(this).find('.test3').css({ 'background-color': 'silver', 'transform': 'none' });
+                if (!active4) $(this).find('.test4').css({ 'background-color': 'gray', 'transform': 'translate(125px,0px)' });
+                else $(this).find('.test4').css({ 'background-color': 'silver', 'transform': 'none' });
+                active1 = !active1;
+                active2 = !active2;
+                active3 = !active3;
+                active4 = !active4;
+
+            });
+        });
+    </script>
+
+</body>
+
+</html>
